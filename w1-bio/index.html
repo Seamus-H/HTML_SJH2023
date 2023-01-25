@@ -1,56 +1,69 @@
-<head><!--Seamus J Holloway     Se111.12 HTML and JavaScript     1/24/2023--></head>
-<!--TODO:    fix link to website, nav links, screenshot, link back to top of page-->
 <!DOCTYPE html>
 <html lang="en">
+    <!--Seamus J Holloway     Se111.12 HTML and JavaScript     1/24/2023-->
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This is a Week 2 Homework">
         <meta name="author" content="Seamus J Holloway">
         <title><i>Week 2 HTML Lab</i></title>
     </head>
-    <!--Bio Section-->
     <body>
+        <!--Bio Section-->
+        <div id="bio" class ="">
         <h1><b>Seamus Jacob Holloway</b></h1>
-        <figure>
-        <img src="images/IMG_3206.jpg" alt="Image of Seamus in front of dirtbike" width="400">
-        <figcaption>A photo from my Senior year of high school</figcaption></figure>
-        <h2>About me</h2>
-        <p style="width:500px">
-            My name is <strong>Seamus J Holloway, </strong>  I am from <em>Charlestown, Rhode Island</em>
-             and I have 2 dogs named jax and Owen. I build houses as a sub contractor when I am not going to school at New England Tech.
-             In my free time I like to <u>Skateboard, Race Motocross, and work on cars with my freinds and family.</u> 
-        </p>
+            <figure>
+            <a href="images/IMG_3206.jpg"></a>
+            <figcaption>A photo from my senior year of high school</figcaption></figure>
+            <h2>About me</h2>
+            <p style="width:500px">
+                My name is <strong>Seamus J Holloway, </strong>  I am from <em>Charlestown, Rhode Island</em>
+                 and I have 2 dogs named jax and Owen. I build houses as a sub contractor when I am not going to school at New England Tech.
+                 In my free time I like to <u>Skateboard, Race Motocross, and work on cars with my freinds and family.</u> 
+            </p>
+        
+        </div>
         <hr>
-        <nav>
-           
+        <nav id="nav">
+           <a href="#schooling">Schools</a>
+           <a href="#bio">Bio</a>
+           <a href="#hobbies">Hobbies</a>
+           <a href="#footer">Footer</a>
         </nav>
         <!--Schooling Section-->
+        <div id="schooling" class="">
         <h2>Schooling</h2>
-        <ul>
+        <ol>
             <li>Elementary School - Matunuck Elementary</li>
             <li>Middle School - Broadrock Middle School</li>
             <li>Middle School - Curtis Corner Middle School</li>
             <li>High School - Chariho Vocational High School</li>
             <li>Current - New England Institute of Technolegy</li>
-        </ul>
+        </ol>
+        </div>
         <hr>
         <!--Hobbies Section-->
-        <h2>Hobbies</h2>
-        <ol>
+        <div id="hobbies" class ="">
+            <h2>Hobbies</h2>
+        <ul>
             <li>Racing NESC Motocross around new england with freinds</li>
             <li>Trying out different skateparks around Mass and CT</li>
             <li> Working on my BMW </li>
             <li> Fishing with my brother </li>
-            <img src="images/IMG_0305.jpg" alt="Image of a project I did with a raspberry pi">
-        </ol>
+        </ul>
+        <img src="images/IMG_0305.jpg" alt="Image of a project I did with a raspberry pi">
+        </div>
         <hr>
         <h2>Website Link</h2>
-            <a href="need link">Link to Main Page for class</a>
+            <a href="https://www.texas-speed.com/?gclid=EAIaIQobChMI373Y1-zi_AIV18mUCR2szwaeEAAYASAAEgJCKfD_BwE">Link to my favorite website.</a>
         <!--Footer-->
         <hr>
-        <footer>
-            <img src="" alt="Snapshot of HTML Validation">
-            <a href="../index.html">Link to Main Page for class</a>
-        </footer>
+        <div id="footer" class="">
+            <footer>
+                <img src="images/Capture.PNG" alt="w3 Validation">
+                <a href="#bio">Link to top of page.</a>
+                <a href="../index.html">Link to Main Page for class</a>
+                <hr>
+            </footer>
+        </div>
     </body>
 </html>
