@@ -22,7 +22,7 @@
             var hoursWorked = prompt("How many hours did you work this week?", "Enter hours worked here:");
             var tax = 0.20;
 
-            var grossPay = (Number(hourlyRate) + Number(hoursWorked)) * 2;
+            var grossPay = (Number(hourlyRate) * Number(hoursWorked)) * 2;
             var taxAmount = Number(grossPay) * Number(tax);
             var netPay = Number(grossPay) - Number(taxAmount);
 
@@ -30,7 +30,7 @@
             console.log(`Your Gross Pay is: $ ${grossPay}`);
             console.log(`Uncle Sam's share is: $ ${taxAmount}`);
             console.log(`Your Net pay is: $ ${netPay}`);
-            alert(`Hi ${yourName}. Your Gross Pay is: $ ${grossPay}. Uncle Sam's share is: $ ${taxAmount}. Your Net pay is: $ ${netPay}`)
+            alert(`Hi ${yourName}. Your Gross Pay is: $ ${grossPay}. Uncle Sam's share is: $ ${taxAmount}. Your Net pay is: $ ${netPay}`);
         }
 
     </script>
