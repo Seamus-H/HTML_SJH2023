@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Calculator Assignment</title>
+</head>
+
+<body>
+    <h1>Pay Calculator</h1>
+    <button>Calculate Pay</button>
+    <script>
+        var myButton = document.querySelector("button");
+        //adds event listener using JavaScript
+        myButton.addEventListener("click", payCalc);
+
+        function payCalc() {
+            var yourName = prompt("Please enter your name.", "Enter name here:");
+            var hourlyRate = prompt("What is your hourly rate?", "Enter hourly wage here:");
+            var hoursWorked = prompt("How many hours did you work this week?", "Enter hours worked here:");
+            var tax = 0.20;
+
+            var grossPay = (Number(hourlyRate) + Number(hoursWorked)) * 2;
+            var taxAmount = Number(grossPay) * Number(tax);
+            var netPay = Number(grossPay) - Number(taxAmount);
+
+            console.log(`Hi ${yourName}.`);
+            console.log(`Your Gross Pay is: $ ${grossPay}`);
+            console.log(`Uncle Sam's share is: $ ${taxAmount}`);
+            console.log(`Your Net pay is: $ ${netPay}`);
+            alert(`Hi ${yourName}. Your Gross Pay is: $ ${grossPay}. Uncle Sam's share is: $ ${taxAmount}. Your Net pay is: $ ${netPay}`)
+        }
+
+    </script>
+</body>
+
+</html>
