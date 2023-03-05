@@ -1,19 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--The type of font we are using-->
+    <style>
+        table,
+        tr,
+        td {
+            border: outset;
+        }
+
+        table {
+            width: 500px;
+        }
+
+        tbody td {
+            text-align: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Seamus Hollowau">
     <meta name="description" content="Week 5 forms assignment">
-    
+
     <link type="text/css" rel="stylesheet" href="style.css">
 
     <title>Week 5 | Tables and Forms</title>
 </head>
+
 <body>
-    <!--Build your Table and Form here-->
+    <h1>Birthday Party Registration Form</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Labels</td>
+                <td>Form Fields</td>
+            </tr>
+        </thead>
+        <tbody>
+            <td><label for="g-first">Parent/Guardian Name</label></td>
+            <td>
+                <input type="text" name="gfirst" placeholder="First Name" id="g-first" required>
+                <input type="text" name="glast" placeholder="Last name" id="g-last" required>
+            </td>
+
+            <td><label for="c-first">Child's First Name</label></td>
+            <td>
+                <input type="text" name="cfirst" placeholder="Child's FirstName" id="c-first" required>
+            </td>
+           
+            <td><label for="age">Child's Age</label></td>
+            <td>
+                <input type="number" name="age" id="age" value = "3" required>
+            </td>
+
+            <tr>
+                <td>Date and Time</td>
+            </tr>
     
+            <td><label for="date">Date</label></td>
+            <td>
+                <input type="date" name="date" id="date" required>
+            </td>
+            
+            <td><label for="time">Start Time</label></td>
+            <td>
+                <input type="time" name="time" id="s-time" required>
+            </td>
+
+            <td><label for="guests">Number of Guests</label></td>
+            <td>
+                <input type="number" name="guests" value = "5">
+            </td>
+
+            <tr>
+                <td>Food</td>
+            </tr>
+
+            <td><label for="size">Size</label></td>
+            <td>
+                <input type="radio" name="size" value = "sm" id="sm">
+                <input type="radio" name="size" value = "md" id="md">
+                <input type="radio" name="size" value = "lg" id="lg">
+            </td>
+
+            <td><label for="drinks">Drinks</label></td>
+            <td>
+                <input type="checkbox" name="drink1" value = "coke" id="drink1" checked> <label for="drink1">Coke</label><br>
+                <input type="checkbox" name="drink2" value = "sprite" id="drink2"> <label for="drink2">Sprite</label><br>
+                <input type="checkbox" name="drink3" value = "fruit punch" id="drink3"> <label for="drink2">fruit punch</label><br>
+                <input type="checkbox" name="drink4" value = "lemonade" id="drink4"> <label for="drink4">Lemonade</label><br>
+                <input type="checkbox" name="drink5" value = "iced tea" id="drink5"> <label for="drink5">iced tea</label>
+            </td>
+
+
+            
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
 </body>
+
 </html>
