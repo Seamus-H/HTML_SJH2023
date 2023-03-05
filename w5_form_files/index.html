@@ -87,26 +87,41 @@
 
             <td><label for="size">Size</label></td>
             <td>
-                <input type="radio" name="size" value = "sm" id="sm">
-                <input type="radio" name="size" value = "md" id="md">
-                <input type="radio" name="size" value = "lg" id="lg">
+                <input type="radio" name="size" value = "sm" id="sm" placeholder="sm">
+                <input type="radio" name="size" value = "md" id="md" placeholder="md">
+                <input type="radio" name="size" value = "lg" id="lg" placeholder="lg">
             </td>
 
-            <td><label for="drinks">Drinks</label></td>
-            <td>
-                <input type="checkbox" name="drink1" value = "coke" id="drink1" checked> <label for="drink1">Coke</label><br>
-                <input type="checkbox" name="drink2" value = "sprite" id="drink2"> <label for="drink2">Sprite</label><br>
-                <input type="checkbox" name="drink3" value = "fruit punch" id="drink3"> <label for="drink2">fruit punch</label><br>
-                <input type="checkbox" name="drink4" value = "lemonade" id="drink4"> <label for="drink4">Lemonade</label><br>
-                <input type="checkbox" name="drink5" value = "iced tea" id="drink5"> <label for="drink5">iced tea</label>
-            </td>
+            <tr><td><label for="drinks">Drinks</label></td>
+                <td>
+                    <input type="checkbox" name="drink1" value = "coke" id="drink1" checked> <label for="drink1">Coke</label><br>
+                    <input type="checkbox" name="drink2" value = "sprite" id="drink2"> <label for="drink2">Sprite</label><br>
+                    <input type="checkbox" name="drink3" value = "fruit punch" id="drink3"> <label for="drink2">fruit punch</label><br>
+                    <input type="checkbox" name="drink4" value = "lemonade" id="drink4"> <label for="drink4">Lemonade</label><br>
+                    <input type="checkbox" name="drink5" value = "iced tea" id="drink5"> <label for="drink5">iced tea</label>
+                </td>
+            </tr>
 
-            <td><label for="guests">Number of Guests</label></td>
+            <td><label for="cake">Cake</label></td>
             <td>
                 <select name="cake" id="cake">
                     <option selected>Chocolate</option>
                     <option>Vanilla</option>
                     <option>I'll bring my own</option>
+            </td>
+
+            <tr>
+                <td>Decorations</td>
+            </tr>
+
+            <td><label for="colors">Color Scheme</label></td>
+            <td>
+                <input type="color" name="colors" id="colors">
+            </td>
+
+            <td><label for="comments">Additional Comments</label></td>
+            <td>
+                <input type="textarea" name="comments" id="comments" placeholder="Please add any additional comments here">
             </td>
             
         </tbody>
