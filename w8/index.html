@@ -15,7 +15,7 @@
 		<table>
 			<tr>
 				<td><label for="first">First Name</label></td>
-				<td><input id="first" type="text" name="first" placeholder="Ivan"></td>
+				<td><input id="first" type="text" name="first" placeholder="Ivan"  ></td>
 			</tr>
 			<tr>
 				<td><label for="last">Last Name</label></td>
@@ -37,14 +37,12 @@
 	
 		//Store the elements (tags) in variables
 
-		var firstName = document.querySelector("#firstName")
-		var lastName = document.querySelector("#lastName")
+		var firstName = document.getElementById("first")
+		var lastName = document.getElementById("last")
 
 		//Make an array to store the people
 		
-		const people = [
-
-		]
+		let people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
 		
@@ -75,8 +73,8 @@
 
             var person = {
 
-				fName= "First: ", + firstName;
-				lName = "Last: ", + lastName;
+				first:  firstName.value,
+				last : lastName.value,
 				
 
             }//end of person object
@@ -86,6 +84,8 @@
 
 			//Add the person object into the people array by using the .push() array method.
 			
+			people.push(person);
+			//console.log(people);
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -103,13 +103,13 @@
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
 			
+			console.log(people);
 
 			//create a variable called 'output' that has an empty string value stored to 
 			
-
+			var output = ""
 			//Loop through the objects in the people array
-			for()
-            {
+			for(let i = 0; i<people.length;i++){
 
 				//Loop through each property in the object
 				for(key in people[i])
@@ -118,17 +118,30 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
+
+					console.log(key.toUpperCase() + ": " + people[i][key]);
+					//console.log(people[i]);
+					//console.log(people[i][key]);
+					//console.log(key.toUpperCase() + ": " + people[i].last);
+					var name = `${key.toUpperCase()}:  ${people[i][key]} <br>`;
+					output += name;
 				
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				//output += `<hr>`
+				output += "<hr>";
 
 
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
+				
 				//replace the outputDiv's inner HTML with the output string
+
+				var page = document.querySelector("#output");
+				page.innerHTML = output;
+    			
 				
 
 
